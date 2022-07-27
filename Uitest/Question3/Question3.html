@@ -1,0 +1,15 @@
+<html>
+<script>
+let rev = 0;
+let num = parseInt(prompt("Input a number"));
+let lastDigit;
+
+while(num != 0){
+	lastDigit = num % 10;
+  rev = rev * 10 + lastDigit;
+  num = Math.floor(num/10);
+}
+
+alert("Reverse number : "+rev);
+</script>
+</html>

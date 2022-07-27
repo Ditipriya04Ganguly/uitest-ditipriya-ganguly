@@ -1,0 +1,13 @@
+<html>
+<script>
+function getUrlParameterValue(url, parameter){
+	var paramStr = url.split('?')[1];
+    var urlParams  = new URLSearchParams(paramStr);
+	return urlParams.get(parameter);
+}
+
+alert(getUrlParameterValue('https://kommunicate.io/poweredby?utm_source=https://www.kommunicate.io/&utm_medium=webplugin&utm_campaign=poweredby', 'utm_medium'));
+
+alert(getUrlParameterValue('https://kommunicate.io/poweredby?utm_source=https://www.kommunicate.io/&utm_medium=webplugin&utm_campaign=poweredby', 'utm_campaign'));
+</script>
+</html>
